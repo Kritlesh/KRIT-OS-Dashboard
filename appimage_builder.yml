@@ -1,0 +1,41 @@
+version: 1
+
+AppDir:
+  path: AppDir
+
+  app_info:
+    id: com.krit.os
+    name: KRIT OS
+    icon: krit-os
+    version: 1.0.0
+    exec: usr/bin/krit-os-dashboard
+
+  runtime:
+    env:
+      PYTHONHOME: usr
+      PYTHONPATH: usr/lib/python3.11/site-packages
+      PATH: usr/bin:${PATH}
+      LD_LIBRARY_PATH: usr/lib:${LD_LIBRARY_PATH}
+
+  files:
+    include:
+      - usr/**
+    exclude:
+      - usr/share/man/**
+      - usr/share/doc/**
+
+script:
+  - echo "Cleaning previous AppDir..."
+  - rm -rf AppDir
+  - echo "Creating directories..."
+  - mkdir -p AppDir/usr/bin
+  - mkdir -p AppDir/usr/share/icons/hicolor/256x256/apps
+  - echo "Copying Krit OS binary..."
+  - cp dist/krit-os-dashboard AppDir/usr/bin/
+  - echo "Copying icon..."
+  - cp assets/minato-namikaze-1920x1080-24353.png AppDir/usr/share/icons/hicolor/256x256/apps/krit-os.png
+
+AppImage:
+  arch: x86_64
+  update-information: guess
+  sign-key: None

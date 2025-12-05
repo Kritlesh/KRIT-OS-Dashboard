@@ -1,0 +1,11 @@
+[Desktop Entry]
+X-AppImage-Arch=x86_64
+X-AppImage-Version=1.0.0
+X-AppImage-Name=KRIT OS
+Name=KRIT OS
+Exec=usr/bin/krit-os-dashboard
+Icon=krit-os
+Type=Application
+Terminal=false
+Categories=Utility;
+Comment=

@@ -1,0 +1,43 @@
+{
+  "hotword": "hey krit",
+  "voice": {
+    "engine": "pyttsx3",
+    "rate": 175,
+    "volume": 0.9
+  },
+  "stt": {
+    "engine": "sphinx",
+    "timeout": 5,
+    "phrase_limit": 15
+  },
+  "ui": {
+    "theme": "dark",
+    "transparency": 0.95,
+    "width": 1200,
+    "height": 800
+  },
+  "plugins": {
+    "auto_load": true,
+    "directory": "krit/plugins",
+    "enabled": [
+      "calendar_plugin",
+      "notes_plugin",
+      "music_plugin",
+      "websearch_plugin",
+      "system_control",
+      "launcher_plugin"
+    ]
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "logs/krit.log",
+    "max_size": 10485760,
+    "backup_count": 5
+  },
+  "features": {
+    "continuous_listening": true,
+    "auto_start": false,
+    "minimize_to_tray": true,
+    "notifications": true
+  }
+}
