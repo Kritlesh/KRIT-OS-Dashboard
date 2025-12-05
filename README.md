@@ -589,7 +589,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Issues**: [GitHub Issues](https://github.com/yourusername/KRIT-OS-Dashboard/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/yourusername/KRIT-OS-Dashboard/discussions)
-- **Email**: support@krit-os.dev
+- **Email**: ytkritlesh@gmail.com
 
 ---
 
